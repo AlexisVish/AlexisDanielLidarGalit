@@ -1,0 +1,27 @@
+.wrapper {
+  direction: rtl;
+  position: relative;
+  display: flex;
+  width: 80%;
+  .inter {
+    font-family: "Inter", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: weight;
+    font-style: normal;
+  }
+  .container {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+
+    &__title {
+      direction: ltr;
+
+      &__price {
+        .transparent {
+          opacity: 0.3;
+        }
+      }
+    }
+  }
+}

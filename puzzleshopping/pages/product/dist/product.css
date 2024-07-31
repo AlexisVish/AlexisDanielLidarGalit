@@ -1,0 +1,23 @@
+.wrapper {
+  direction: rtl;
+  position: relative;
+  display: flex;
+  width: 80%;
+}
+.wrapper .inter {
+  font-family: "Inter", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: weight;
+  font-style: normal;
+}
+.wrapper .container {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+}
+.wrapper .container__title {
+  direction: ltr;
+}
+.wrapper .container__title__price .transparent {
+  opacity: 0.3;
+}
