@@ -3,6 +3,7 @@
   position: relative;
   display: flex;
   width: 80%;
+  font-size: 16px;
 }
 .wrapper .inter {
   font-family: "Inter", sans-serif;
@@ -13,11 +14,23 @@
 .wrapper .container {
   display: flex;
   flex-direction: row;
-  width: 100%;
+  width: 40%;
+  margin: 0;
+  font-size: smaller;
 }
 .wrapper .container__title {
   direction: ltr;
+  line-height: 15px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+.wrapper .container__title__name {
+  line-height: 1px;
+}
+.wrapper .container__title__price {
+  line-height: 1px;
 }
 .wrapper .container__title__price .transparent {
-  opacity: 0.3;
+  opacity: 0.5;
 }

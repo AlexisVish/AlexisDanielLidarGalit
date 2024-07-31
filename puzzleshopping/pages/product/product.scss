@@ -3,6 +3,7 @@
   position: relative;
   display: flex;
   width: 80%;
+  font-size: 16px;
   .inter {
     font-family: "Inter", sans-serif;
     font-optical-sizing: auto;
@@ -12,14 +13,23 @@
   .container {
     display: flex;
     flex-direction: row;
-    width: 100%;
-
+    width: 40%;
+    margin: 0;
+    font-size: smaller;
     &__title {
       direction: ltr;
-
+      line-height: 15px;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      white-space: nowrap;
+      &__name {
+        line-height: 1px;
+      }
       &__price {
+        line-height: 1px;
+
         .transparent {
-          opacity: 0.3;
+          opacity: 0.5;
         }
       }
     }
