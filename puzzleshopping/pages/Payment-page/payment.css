@@ -1,3 +1,7 @@
+body {
+  font-family: "Inter", sans-serif;
+}
+
 .payment-header {
   width: 90%;
   height: 4.55rem;
@@ -218,6 +222,76 @@
 }
 .more-info div:not(:last-child) {
   margin-bottom: 1rem;
+}
+
+.order-summary {
+  position: absolute;
+  top: 5rem;
+  left: 50rem;
+  width: 25rem;
+  padding: 1.5rem;
+  background-color: #fff;
+}
+.order-summary .order-summary-header {
+  font-size: 1.75rem;
+  font-weight: bold;
+  margin-bottom: 1rem;
+}
+.order-summary .Subtotal, .order-summary .delivery-shipping, .order-summary .order-date {
+  font-size: 1.2rem;
+  margin-bottom: 0.5rem;
+  color: #a6a6a6;
+}
+.order-summary .total {
+  color: #363636;
+  font-size: 1.2rem;
+  border-top: 1px solid #ddd;
+  border-bottom: 1px solid #ddd;
+}
+.order-summary .total-info {
+  color: #1c1c1c;
+  font-size: 0.7rem;
+}
+.order-summary .Subtotal, .order-summary .delivery-shipping, .order-summary .total {
+  font-weight: 500;
+}
+.order-summary .order-date {
+  font-size: 1.4rem;
+  color: #0d0d0d;
+  margin-top: 1rem;
+  font-weight: bolder;
+}
+.order-summary .group-item1, .order-summary .group-item2 {
+  display: flex;
+  align-items: flex-start;
+  margin-bottom: 1rem;
+  padding: 0.5rem;
+  border-bottom: 1px solid #ddd;
+}
+.order-summary .group-item1 img, .order-summary .group-item2 img {
+  width: 14rem;
+  height: auto;
+  margin-right: 1rem;
+}
+.order-summary .group-item1 .info-container, .order-summary .group-item2 .info-container {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+.order-summary .group-item1 .info-container .info-item1, .order-summary .group-item1 .info-container .info-item2, .order-summary .group-item2 .info-container .info-item1, .order-summary .group-item2 .info-container .info-item2 {
+  font-size: 1rem;
+  font-weight: 500;
+}
+.order-summary .group-item1 .info-container .quantity-info-item1, .order-summary .group-item1 .info-container .quantity-info-item2,
+.order-summary .group-item1 .info-container .size-item1, .order-summary .group-item1 .info-container .size-item2,
+.order-summary .group-item1 .info-container .price-item1, .order-summary .group-item1 .info-container .price-item2, .order-summary .group-item2 .info-container .quantity-info-item1, .order-summary .group-item2 .info-container .quantity-info-item2,
+.order-summary .group-item2 .info-container .size-item1, .order-summary .group-item2 .info-container .size-item2,
+.order-summary .group-item2 .info-container .price-item1, .order-summary .group-item2 .info-container .price-item2 {
+  font-size: 0.9rem;
+  color: #666;
+}
+.order-summary .group-item1 .info-container .price-item1, .order-summary .group-item1 .info-container .price-item2, .order-summary .group-item2 .info-container .price-item1, .order-summary .group-item2 .info-container .price-item2 {
+  font-weight: 600;
 }
 
 @media (max-width: 768px) {

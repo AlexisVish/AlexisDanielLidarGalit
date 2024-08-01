@@ -1,4 +1,7 @@
+body{
+    font-family: 'Inter', sans-serif;
 
+}
 .payment-header {
     width: 90%;
     height: 4.55rem; 
@@ -258,6 +261,87 @@
         }
       }
 
+
+      .order-summary {
+        position: absolute;
+        top: 5rem;
+        left:50rem;
+        width: 25rem; 
+        padding: 1.5rem; 
+        background-color: #fff;
+    
+        .order-summary-header {
+            font-size: 1.75rem;
+            font-weight: bold;
+            margin-bottom: 1rem;
+        }
+    
+        .Subtotal, .delivery-shipping,  .order-date {
+            font-size: 1.2rem;
+            margin-bottom: 0.5rem;
+            color: #a6a6a6;
+            
+        }
+       .total{
+            color: #363636;
+            font-size: 1.2rem;
+            border-top: 1px solid #ddd;
+            border-bottom: 1px solid #ddd;
+
+
+        }
+        .total-info {
+          color: #1c1c1c;
+          font-size: 0.7rem;
+        }
+        .Subtotal, .delivery-shipping, .total {
+            font-weight: 500;
+        }
+    
+
+        .order-date {
+            font-size: 1.4rem;
+            color: #0d0d0d; 
+            margin-top: 1rem;
+            font-weight: bolder;
+        }
+    
+        .group-item1, .group-item2 {
+          display: flex;
+          align-items: flex-start; 
+          margin-bottom: 1rem;
+          padding: 0.5rem;
+          border-bottom: 1px solid #ddd;
+      
+          img {
+              width: 14rem; 
+              height: auto;
+              margin-right: 1rem;
+          }
+      
+          .info-container {
+              display: flex;
+              flex-direction: column; 
+              gap: 0.5rem;
+      
+              .info-item1, .info-item2 {
+                  font-size: 1rem;
+                  font-weight: 500;
+              }
+      
+              .quantity-info-item1, .quantity-info-item2,
+              .size-item1, .size-item2,
+              .price-item1, .price-item2 {
+                  font-size: 0.9rem;
+                  color: #666; 
+              }
+      
+              .price-item1, .price-item2 {
+                  font-weight: 600; 
+              }
+          }
+        }
+      }
 
   @media (max-width: 768px) {
     .payment-header {
