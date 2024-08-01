@@ -84,6 +84,132 @@
   font-size: 0.9rem;
 }
 
+.client-info {
+  font-family: "Inter", sans-serif;
+  padding: 2rem;
+}
+.client-info .client-info-header {
+  font-size: 1.4rem;
+  font-weight: bold;
+  margin-bottom: 1.5rem;
+}
+.client-info form {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+.client-info form label {
+  font-size: 1rem;
+  font-weight: 500;
+  margin-bottom: 0.5rem;
+}
+.client-info form input[type=text],
+.client-info form input[type=number],
+.client-info form select {
+  font-size: 1rem;
+  padding: 0.5rem;
+  border: 1px solid #dcdcdc;
+  border-radius: 0.4rem;
+  outline: none;
+  width: 20rem;
+  height: 2.5rem;
+}
+.client-info form input[type=text]:focus,
+.client-info form input[type=number]:focus,
+.client-info form select:focus {
+  border-color: #007bff;
+  box-shadow: 0 0 0 0.2rem rgba(38, 143, 255, 0.25);
+}
+.client-info form .inline-group {
+  display: flex;
+  gap: 1rem;
+}
+.client-info form .inline-group input[type=number],
+.client-info form .inline-group input[type=text],
+.client-info form .inline-group select {
+  width: 9rem;
+}
+.client-info form .checkbox-group {
+  display: flex;
+  align-items: center;
+}
+.client-info form .checkbox-group input[type=checkbox] {
+  margin-right: 0.5rem;
+}
+.client-info form .checkbox-group label {
+  font-size: 1rem;
+  font-weight: 500;
+}
+.client-info form .pan {
+  margin-top: 2rem;
+}
+.client-info form .pan .pan-header-text {
+  font-size: 1.6rem;
+  font-weight: bold;
+  margin-bottom: 1rem;
+}
+.client-info form .pan p {
+  font-size: 1.4rem;
+  color: #666;
+  margin-top: 0.5rem;
+}
+.client-info form .pan input[type=number] {
+  width: 20rem;
+  height: 2.5rem;
+}
+.client-info form .pan .checkbox-group {
+  margin-top: 1rem;
+  width: 1rem;
+  height: auto;
+}
+.client-info form .client-contact-info {
+  margin-top: 2rem;
+}
+.client-info form .client-contact-info .client-contact-info-header {
+  font-size: 1.6rem;
+  font-weight: bold;
+  margin-bottom: 1rem;
+}
+.client-info form .client-contact-info input[type=email],
+.client-info form .client-contact-info input[type=tel] {
+  width: 20rem;
+  height: 2.5rem;
+}
+.client-info form .client-contact-info .pan .pan-header-text {
+  font-size: 1.6rem;
+}
+.client-info form .client-contact-info .pan .pan-header-text .pan-text {
+  font-size: 0.3rem;
+  color: #dcdcdc;
+}
+.client-info form .client-contact-info button.payment-btn {
+  font-size: 1.6rem;
+  padding: 1rem;
+  border: none;
+  border-radius: 0.4rem;
+  background-color: #747272;
+  color: #fff;
+  cursor: pointer;
+  margin-top: 1rem;
+}
+.client-info form .client-contact-info button.payment-btn:hover {
+  background-color: #c1c1c1;
+}
+.client-info form .more-info {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 2rem;
+  font-size: 1.4rem;
+}
+.client-info form .more-info div {
+  background-color: #f8f8f8;
+  border-top: 1px solid #ddd;
+  border-radius: 0.4rem;
+  padding: 1rem;
+  text-align: center;
+  width: 100%;
+}
+
 @media (max-width: 768px) {
   .payment-header {
     flex-direction: column;

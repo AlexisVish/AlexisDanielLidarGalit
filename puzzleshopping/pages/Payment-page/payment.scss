@@ -100,6 +100,159 @@
     }
   }
   
+  .client-info {
+    font-family: 'Inter', sans-serif;
+    padding: 2rem;
+  
+    .client-info-header {
+      font-size: 1.4rem;
+      font-weight: bold;
+      margin-bottom: 1.5rem;
+    }
+  
+    form {
+      display: flex;
+      flex-direction: column;
+      gap: 1.5rem;
+  
+      label {
+        font-size: 1rem;
+        font-weight: 500;
+        margin-bottom: 0.5rem;
+      }
+  
+      input[type="text"],
+      input[type="number"],
+      select {
+        font-size: 1rem;
+        padding: 0.5rem;
+        border: 1px solid #dcdcdc;
+        border-radius: 0.4rem;
+        outline: none;
+        width: 20rem;
+        height: 2.5rem;
+  
+        &:focus {
+          border-color: #007bff;
+          box-shadow: 0 0 0 0.2rem rgba(38, 143, 255, 0.25);
+        }
+      }
+  
+      .inline-group {
+        display: flex;
+        gap: 1rem;
+    
+        input[type="number"],
+        input[type="text"],
+        select {
+          width: 9rem; 
+        }
+      }
+  
+      .checkbox-group {
+        display: flex;
+        align-items: center;
+  
+        input[type="checkbox"] {
+          margin-right: 0.5rem;
+        }
+        
+        label {
+          font-size: 1rem;
+          font-weight: 500;
+        }
+      }
+  
+      .pan {
+        margin-top: 2rem;
+  
+        .pan-header-text {
+          font-size: 1.6rem;
+          font-weight: bold;
+          margin-bottom: 1rem;
+        }
+  
+        p {
+          font-size: 1.4rem;
+          color: #666;
+          margin-top: 0.5rem;
+        }
+  
+        input[type="number"] {
+          width: 20rem; 
+          height: 2.5rem;
+        }
+        
+        .checkbox-group {
+          margin-top: 1rem;
+          width: 1rem;
+          height: auto;
+        }
+      }
+  
+      .client-contact-info {
+        margin-top: 2rem;
+  
+        .client-contact-info-header {
+          font-size: 1.6rem;
+          font-weight: bold;
+          margin-bottom: 1rem;
+        }
+  
+        input[type="email"],
+        input[type="tel"] {
+          width: 20rem; 
+          height: 2.5rem;
+        }
+        .pan {
+            .pan-header-text {
+              font-size: 1.6rem;
+              margin-bottom: 1rem; 
+            }
+          
+            .pan-text {
+              font-size: 0.625rem; 
+              color: #dcdcdc;
+              margin-top: 1rem; 
+            }
+          }
+        }
+        }
+        button.payment-btn {
+          font-size: 1.6rem;
+          padding: 1rem;
+          border: none;
+          border-radius: 0.4rem;
+          background-color: #747272;
+          color: #fff;
+          cursor: pointer;
+          margin-top: 1rem;
+  
+          &:hover {
+            background-color: #c1c1c1;
+          }
+        }
+      }
+  
+      .more-info {
+        display: flex;
+        justify-content: space-between;
+        margin-top: 2rem;
+        font-size: 1.4rem;
+  
+        div {
+          background-color: #f8f8f8;
+         border-top: 1px solid #ddd;
+          border-radius: 0.4rem;
+          padding: 1rem;
+          text-align: center;
+          width: 100%;
+  
+        }
+      }
+    }
+  }
+
   @media (max-width: 768px) {
     .payment-header {
       flex-direction: column;
