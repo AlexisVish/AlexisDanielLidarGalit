@@ -173,14 +173,17 @@ body {
   height: 2.5rem;
 }
 .client-info form button.payment-btn {
-  font-size: 1.6rem;
-  padding: 1rem;
-  border: none;
-  border-radius: 0.4rem;
-  background-color: #747272;
-  color: #fff;
-  cursor: pointer;
+  width: Hug 440px px;
+  height: Hug 60px px;
+  top: 1444px;
+  padding: 16px 185.33px 16px 185.67px;
+  gap: 0px;
+  border-radius: 30px 30px 30px 30px;
+  opacity: 0px;
   margin-top: 1rem;
+  background: #F5F5F5;
+  border-color: #F5F5F5;
+  border-bottom-color: #F5F5F5;
 }
 .client-info form button.payment-btn:hover {
   background-color: #c1c1c1;
