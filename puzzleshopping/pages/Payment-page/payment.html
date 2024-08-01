@@ -48,13 +48,15 @@
                     <input type="text" id="locality" name="locality" placeholder="Locality">
                   </div>
                   <div class="inline-group">
-                <select id="state" name="state" placeholder="state">
+                    <select id="state" name="state">
+                        <option value="" disabled selected> State</option>
                     <option value="north">North</option>
                     <option value="south">South</option>
                     <option value="east">East</option>
                     <option value="west">West</option>
                 </select>
                 <select id="country" name="country" placeholder="country">
+                    <option value="" disabled selected> Country</option>
                     <option value="afghanistan">Afghanistan</option>
                     <option value="albania">Albania</option>
                     <option value="algeria">Algeria</option>
@@ -302,16 +304,25 @@
                             <div class="pan-text"> Enter your PAN to enable payment with UPI, Net Banking or local card methods  </div>
                             <input type="checkbox" id="SavePAN" name="SavePAN" value="SavePAN">
                             <label for="SavePAN"> Save PAN details to Nike Profile </label>
-
-                <div class="client-contact-info">
-                    <div class="client-contact-info-header">What's your contact information?</div>
-                    <input type="email" id="email" name="email" placeholder="Email"> <br/>
-                    <input type="tel" id="phone" name="phone" placeholder="Phone Number"> <br/>
-                    <button type="submit" class="payment-btn">Continue</button>
-                </form>
-                </div> 
+                            <form action="client-address-info" method="POST">
+                            <div class="client-contact-info">
+                                <div class="client-contact-info-header">What's your contact information?</div>
+                                <input type="email" id="email" name="email" placeholder="Email"> <br/> <br />
+                                <input type="tel" id="phone" name="phone" placeholder="Phone Number"><br/>
+                                <button type="submit" class="payment-btn">Continue</button>
+                              </div>
+                            </form>
+                        </div>
+                    </div>
+                            </form>
+                          </div>
+                          <div class="more-info"> 
+                            <div class="Delivery"> Delivery </div>
+                            <div class="Shipping"> Shipping </div>
+                            <div class="Billing"> Billing </div>
+                            <div class="Payment"> Payment </div>
+                        </div>
             </div>
-        </div>
-    </div>
+
 </body>
 </html>

@@ -32,6 +32,7 @@
   .payment-header {
     padding: 0 0.5rem;
   }
+
   .payment-header-left-side {
     gap: 2rem;
   }
@@ -226,13 +227,15 @@
     align-items: flex-start;
     height: auto;
   }
+
   .payment-header-left-side {
     flex-direction: row;
     align-items: center;
     gap: 1rem;
     margin-left: 0;
   }
+
   .payment-nike-logo {
     margin-bottom: 1rem;
   }
-}/*# sourceMappingURL=payment.css.map */
+}
