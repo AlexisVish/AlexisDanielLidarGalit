@@ -16,17 +16,27 @@
   padding-top: 5%;
   display: flex;
   flex-direction: row;
+  justify-content: center;
 }
 .wrapper .page .photo-block {
+  width: 70%;
   padding-right: 5%;
   display: flex;
-  gap: 5px;
+  flex-direction: row;
+  gap: 15px;
+}
+.wrapper .page .photo-block__column {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  gap: 15px;
+}
+.wrapper .page .photo-block__column .image {
+  width: 100%;
 }
 .wrapper .page .container {
   display: flex;
   flex-direction: column;
-  width: 30%;
-  margin: 0;
   font-size: small;
 }
 .wrapper .page .container__title {
@@ -46,6 +56,71 @@
   opacity: 0.5;
 }
 .wrapper .page .container__sizes {
+  padding-top: 100px;
   display: flex;
   flex-direction: column;
+  width: 100%;
+}
+.wrapper .page .container__sizes__header {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.wrapper .page .container__sizes__header .transparent {
+  opacity: 0.5;
+}
+.wrapper .page .container__sizes__size-boxes .row {
+  display: flex;
+  flex-direction: row;
+  gap: 5px;
+}
+.wrapper .page .container__sizes__size-boxes .row .size {
+  border-style: solid;
+  border-color: #e3e3e3;
+  border-radius: 5px;
+  border-width: 1px;
+  font-size: 0.7rem;
+  width: 75px;
+  height: 25px;
+  padding: 3%;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  justify-content: center;
+}
+.wrapper .page .container__sizes__size-boxes .row .size:hover {
+  border-color: black;
+  cursor: pointer;
+}
+.wrapper .page .container__sizes__size-boxes .row:last-child {
+  margin-bottom: 0;
+}
+.wrapper .page .container__choose {
+  display: flex;
+  flex-direction: column;
+}
+.wrapper .page .container__choose .button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 55px;
+  border-style: solid;
+  border-color: black;
+  border-width: 1px;
+  border-radius: 150px;
+  font-size: 0.8rem;
+}
+.wrapper .page .container__choose .button:hover {
+  cursor: pointer;
+  text-decoration: underline;
+}
+.wrapper .page .container__choose .Add {
+  font-style: bold;
+  background-color: black;
+  color: white;
+}
+.wrapper .page .container__choose .Add:hover {
+  background-color: white;
+  color: black;
 }
