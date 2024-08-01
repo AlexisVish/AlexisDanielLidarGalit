@@ -1,0 +1,102 @@
+.payment-header {
+  width: 90%;
+  height: 4.55rem;
+  background-color: white;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 1rem;
+}
+.payment-header .payment-nike-logo {
+  width: 4rem;
+  height: 1.36rem;
+}
+.payment-header .payment-header-left-side {
+  display: flex;
+  align-items: center;
+  gap: 3.125rem;
+}
+.payment-header .payment-header-left-side .payment-order-number {
+  font-family: "Inter", sans-serif;
+  font-size: 0.875rem;
+  font-weight: 400;
+  line-height: 1.5rem;
+  text-align: left;
+}
+.payment-header .payment-header-left-side .payment-message, .payment-header .payment-header-left-side .payment-basket {
+  width: 1.25rem;
+  height: 1.25rem;
+}
+
+@media (max-width: 1200px) {
+  .payment-header {
+    padding: 0 0.5rem;
+  }
+  .payment-header-left-side {
+    gap: 2rem;
+  }
+}
+.payment-box {
+  width: 55rem;
+  height: 148rem;
+  position: absolute;
+  top: 5rem;
+  left: 18rem;
+}
+.payment-box .payment-about .payment-header {
+  font-family: "Inter", sans-serif;
+  font-size: 1rem;
+  font-weight: 500;
+  line-height: 1.5rem;
+  text-align: left;
+  font-weight: bold;
+  left: 18rem;
+}
+.payment-box .payment-about .payment-about-info {
+  font-family: "Inter", sans-serif;
+  font-size: 0.9rem;
+  font-weight: 400;
+  text-align: left;
+  width: 22rem;
+  color: grey;
+  margin-left: 1rem;
+  margin-top: -1rem;
+}
+
+.deliver-box {
+  width: 15rem;
+  height: 3rem;
+  border: 0.1rem solid black;
+  border-radius: 12px;
+  margin-top: 1rem;
+  margin-left: 1rem;
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  padding-left: 1rem;
+}
+.deliver-box .payment-deliver-image {
+  width: 1.25rem;
+  height: 1.25rem;
+}
+.deliver-box .deliver-text {
+  font-family: "Inter", sans-serif;
+  font-size: 0.9rem;
+}
+
+@media (max-width: 768px) {
+  .payment-header {
+    flex-direction: column;
+    align-items: flex-start;
+    height: auto;
+  }
+  .payment-header-left-side {
+    flex-direction: row;
+    align-items: center;
+    gap: 1rem;
+    margin-left: 0;
+  }
+  .payment-nike-logo {
+    margin-bottom: 1rem;
+  }
+}/*# sourceMappingURL=payment.css.map */
