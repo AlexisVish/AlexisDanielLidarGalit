@@ -38,6 +38,7 @@
   display: flex;
   flex-direction: column;
   font-size: small;
+  gap: 5px;
 }
 .wrapper .page .container__title {
   direction: ltr;
