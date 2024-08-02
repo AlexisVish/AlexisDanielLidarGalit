@@ -61,6 +61,8 @@
   display: flex;
   flex-direction: column;
   width: 100%;
+  position: relative;
+  gap: 5px;
 }
 .wrapper .page .container__sizes__header {
   display: flex;
@@ -69,6 +71,9 @@
 }
 .wrapper .page .container__sizes__header .transparent {
   opacity: 0.5;
+}
+.wrapper .page .container__sizes__size-boxes p {
+  margin: 5px;
 }
 .wrapper .page .container__sizes__size-boxes .row {
   display: flex;
@@ -99,6 +104,8 @@
 .wrapper .page .container__choose {
   display: flex;
   flex-direction: column;
+  margin-top: 15px;
+  gap: 10px;
 }
 .wrapper .page .container__choose .button {
   display: flex;
@@ -114,7 +121,6 @@
 }
 .wrapper .page .container__choose .button:hover {
   cursor: pointer;
-  text-decoration: underline;
 }
 .wrapper .page .container__choose .Add {
   font-style: bold;

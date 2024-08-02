@@ -11,6 +11,7 @@
     font-weight: weight;
     font-style: normal;
   }
+ 
   .page {
     padding-top: 5%;
     display: flex;
@@ -61,7 +62,8 @@
         display: flex;
         flex-direction: column;
         width: 100%;
-        
+        position: relative;
+        gap: 5px;
         &__header {
           display: flex;
           flex-direction: row;
@@ -71,12 +73,16 @@
           }
         }
         &__size-boxes {
+            p{
+                margin: 5px;
+              }
           .row {
             display: flex;
             flex-direction: row;
             gap: 5px;
 
             .size {
+               
               border-style: solid;
               border-color: rgb(227, 227, 227);
               border-radius: 5px;
@@ -104,6 +110,8 @@
       &__choose {
         display: flex;
         flex-direction: column;
+        margin-top: 15px;
+        gap: 10px;
         .button {
           display: flex;
           align-items: center;
@@ -118,8 +126,8 @@
         }
         .button:hover {
           cursor: pointer;
-          text-decoration: underline;
         }
+       
         .Add {
           font-style: bold;
           background-color: black;
@@ -130,6 +138,9 @@
           color: black;
         }
       }
+    //   .description{
+    //     width: 30%;
+    //   }
     }
   }
 }
