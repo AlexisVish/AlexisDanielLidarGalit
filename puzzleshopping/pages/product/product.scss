@@ -1,6 +1,7 @@
 .wrapper {
   position: relative;
   display: flex;
+  flex-direction: column;
   font-size: 16px;
   width: 80%;
   padding-left: 10%;
@@ -11,7 +12,7 @@
     font-weight: weight;
     font-style: normal;
   }
- 
+
   .page {
     padding-top: 5%;
     display: flex;
@@ -36,7 +37,7 @@
     .container {
       display: flex;
       flex-direction: column;
-
+      width: 30%;
       font-size: small;
       gap: 5px;
 
@@ -73,16 +74,15 @@
           }
         }
         &__size-boxes {
-            p{
-                margin: 5px;
-              }
+          p {
+            margin: 5px;
+          }
           .row {
             display: flex;
             flex-direction: row;
             gap: 5px;
 
             .size {
-               
               border-style: solid;
               border-color: rgb(227, 227, 227);
               border-radius: 5px;
@@ -100,7 +100,6 @@
               border-color: black;
               cursor: pointer;
             }
-          
           }
           .row:last-child {
             margin-bottom: 0;
@@ -112,6 +111,7 @@
         flex-direction: column;
         margin-top: 15px;
         gap: 10px;
+        font-size: 15px;
         .button {
           display: flex;
           align-items: center;
@@ -122,12 +122,11 @@
           border-color: black;
           border-width: 1px;
           border-radius: 150px;
-          font-size: 0.8rem;
         }
         .button:hover {
           cursor: pointer;
         }
-       
+
         .Add {
           font-style: bold;
           background-color: black;
@@ -138,9 +137,30 @@
           color: black;
         }
       }
-    //   .description{
-    //     width: 30%;
-    //   }
+      .description {
+        margin-top: 45px;
+        width: 100%;
+        font-size: 0.8rem;
+        line-height: 25px;
+      }
+      &__product {
+        width: 100%;
+        &__details {
+          display: flex;
+        
+          .line {
+            justify-content: space-between;
+          }
+          .line:hover{
+            text-decoration: underline;
+          }
+        }
+      }
     }
+  }
+  .page{
+    position: relative;
+    top: 25px;
+    margin-top: 25px;
   }
 }

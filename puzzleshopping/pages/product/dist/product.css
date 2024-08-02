@@ -1,6 +1,7 @@
 .wrapper {
   position: relative;
   display: flex;
+  flex-direction: column;
   font-size: 16px;
   width: 80%;
   padding-left: 10%;
@@ -37,6 +38,7 @@
 .wrapper .page .container {
   display: flex;
   flex-direction: column;
+  width: 30%;
   font-size: small;
   gap: 5px;
 }
@@ -106,6 +108,7 @@
   flex-direction: column;
   margin-top: 15px;
   gap: 10px;
+  font-size: 15px;
 }
 .wrapper .page .container__choose .button {
   display: flex;
@@ -117,7 +120,6 @@
   border-color: black;
   border-width: 1px;
   border-radius: 150px;
-  font-size: 0.8rem;
 }
 .wrapper .page .container__choose .button:hover {
   cursor: pointer;
@@ -130,4 +132,27 @@
 .wrapper .page .container__choose .Add:hover {
   background-color: white;
   color: black;
+}
+.wrapper .page .container .description {
+  margin-top: 45px;
+  width: 100%;
+  font-size: 0.8rem;
+  line-height: 25px;
+}
+.wrapper .page .container__product {
+  width: 100%;
+}
+.wrapper .page .container__product__details {
+  display: flex;
+}
+.wrapper .page .container__product__details .line {
+  justify-content: space-between;
+}
+.wrapper .page .container__product__details .line:hover {
+  text-decoration: underline;
+}
+.wrapper .page {
+  position: relative;
+  top: 25px;
+  margin-top: 25px;
 }
