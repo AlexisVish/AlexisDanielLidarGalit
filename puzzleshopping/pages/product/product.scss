@@ -158,9 +158,12 @@
       }
     }
   }
-  .page{
+  .ads{
     position: relative;
     top: 25px;
     margin-top: 25px;
+    display: flex;
+    flex-direction: column;
+    gap: 45px;
   }
 }

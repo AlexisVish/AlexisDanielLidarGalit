@@ -151,8 +151,11 @@
 .wrapper .page .container__product__details .line:hover {
   text-decoration: underline;
 }
-.wrapper .page {
+.wrapper .ads {
   position: relative;
   top: 25px;
   margin-top: 25px;
+  display: flex;
+  flex-direction: column;
+  gap: 45px;
 }
