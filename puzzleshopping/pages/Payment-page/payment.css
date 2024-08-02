@@ -31,40 +31,27 @@ body {
   height: 1.25rem;
 }
 
-@media (max-width: 1200px) {
-  .payment-header {
-    padding: 0 0.5rem;
-  }
-  .payment-header-left-side {
-    gap: 2rem;
-  }
-}
-.payment-box {
+.order-details {
   width: 55rem;
-  height: 148rem;
   position: absolute;
-  top: 5rem;
-  left: 18rem;
+  top: 7rem;
+  left: 15rem;
 }
-.payment-box .payment-about .payment-header {
-  font-size: 1rem;
-  font-weight: 500;
+.order-details .order-header {
+  font-size: 1.2rem;
+  font-weight: bold;
   line-height: 1.5rem;
   text-align: left;
-  font-weight: bold;
-  left: 18rem;
+  margin-bottom: 0.2rem;
 }
-.payment-box .payment-about .payment-about-info {
+.order-details .order-alert {
   font-size: 0.9rem;
   font-weight: 400;
   text-align: left;
   width: 22rem;
   color: grey;
-  margin-left: 1rem;
-  margin-top: -1rem;
 }
-
-.deliver-box {
+.order-details .delivery-option {
   width: 15rem;
   height: 3rem;
   border: 0.1rem solid black;
@@ -75,37 +62,47 @@ body {
   align-items: center;
   gap: 1rem;
   padding-left: 1rem;
+  background-color: #ffffff;
+  cursor: pointer;
 }
-.deliver-box .payment-deliver-image {
+.order-details .delivery-option:hover {
+  background-color: #e9e9e9;
+}
+.order-details .delivery-option:active {
+  background-color: #e9e9e9;
+}
+.order-details .delivery-option .delivery-image {
   width: 1.25rem;
   height: 1.25rem;
 }
-.deliver-box .deliver-text {
+.order-details .delivery-option .delivery-text {
   font-size: 0.9rem;
 }
 
-.client-info {
-  padding: 2rem;
+.payment-form {
+  position: relative;
+  top: 20rem;
+  left: 14rem;
 }
-.client-info .client-info-header {
+.payment-form .header {
   font-size: 1.4rem;
   font-weight: bold;
   margin-bottom: 1.5rem;
 }
-.client-info form {
+.payment-form form {
   display: flex;
   flex-direction: column;
   gap: 1.5rem;
 }
-.client-info form label {
+.payment-form form label {
   font-size: 1rem;
   font-weight: 500;
-  margin-bottom: 0.5rem;
+  margin-bottom: 0.2rem;
 }
-.client-info form input[type=text],
-.client-info form input[type=number],
-.client-info form input[type=select],
-.client-info form select {
+.payment-form form input[type=text],
+.payment-form form input[type=number],
+.payment-form form input[type=email],
+.payment-form form select {
   font-size: 1rem;
   padding: 0.5rem;
   border: 1px solid #dcdcdc;
@@ -114,94 +111,80 @@ body {
   width: 20rem;
   height: 2.5rem;
 }
-.client-info form .inline-group1, .client-info form .inline-group2 {
+.payment-form form .inline-group {
   display: flex;
   gap: 1rem;
 }
-.client-info form .inline-group1 input[type=number],
-.client-info form .inline-group1 input[type=text],
-.client-info form .inline-group1 input[type=select],
-.client-info form .inline-group1 select, .client-info form .inline-group2 input[type=number],
-.client-info form .inline-group2 input[type=text],
-.client-info form .inline-group2 input[type=select],
-.client-info form .inline-group2 select {
+.payment-form form .inline-group input[type=number],
+.payment-form form .inline-group input[type=text],
+.payment-form form .inline-group select {
   width: 9rem;
 }
-.client-info form .checkbox-group {
+.payment-form form .inline-group input[type=number] select,
+.payment-form form .inline-group input[type=text] select,
+.payment-form form .inline-group select select {
+  width: 3rem;
+  height: 2rem;
+  padding: 0.5rem;
+  font-size: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  margin-bottom: 0.5rem;
+}
+.payment-form form .inline-group input[type=number] #country,
+.payment-form form .inline-group input[type=text] #country,
+.payment-form form .inline-group select #country {
+  margin-top: 1rem;
+}
+.payment-form .remark {
+  font-size: 0.9rem;
+  color: #666;
+  margin-top: -1.2rem;
+  margin-bottom: -0.5rem;
+}
+
+.checkbox-group {
   display: flex;
   align-items: center;
 }
-.client-info form .checkbox-group input[type=checkbox] {
-  margin-right: 0.5rem;
-}
-.client-info form .checkbox-group label {
+.checkbox-group label {
   font-size: 1rem;
   font-weight: 500;
 }
-.client-info form .pan {
-  margin-top: 2rem;
+
+.payment-btn {
+  width: 440px;
+  height: 60px;
+  border-radius: 30px;
+  background: #f5f5f5;
+  border: none;
+  padding: 16px;
+  gap: 0;
+  opacity: 1;
+  margin-bottom: 0.5rem;
 }
-.client-info form .pan .pan-header-text {
-  font-size: 1.6rem;
-  font-weight: bold;
-  margin-bottom: 1rem;
-}
-.client-info form .pan p {
-  font-size: 1.4rem;
-  color: #666;
-  margin-top: 0.5rem;
-}
-.client-info form .pan input[type=number] {
-  width: 20rem;
-  height: 2.5rem;
-}
-.client-info form .pan .checkbox-group {
-  margin-top: 1rem;
-}
-.client-info form .client-contact-info {
-  margin-top: 2rem;
-}
-.client-info form .client-contact-info .client-contact-info-header {
-  font-size: 1.6rem;
-  font-weight: bold;
-  margin-bottom: 1rem;
-}
-.client-info form .client-contact-info input[type=email],
-.client-info form .client-contact-info input[type=tel] {
-  width: 20rem;
-  height: 2.5rem;
-}
-.client-info form button.payment-btn {
-  width: Hug 440px px;
-  height: Hug 60px px;
-  top: 1444px;
-  padding: 16px 185.33px 16px 185.67px;
-  gap: 0px;
-  border-radius: 30px 30px 30px 30px;
-  opacity: 0px;
-  margin-top: 1rem;
-  background: #F5F5F5;
-  border-color: #F5F5F5;
-  border-bottom-color: #F5F5F5;
-}
-.client-info form button.payment-btn:hover {
+.payment-btn:hover {
   background-color: #c1c1c1;
 }
 
 .more-info {
-  font-size: 1rem;
+  font-size: 1.3rem;
   margin: 0.5rem;
 }
 .more-info div {
   position: relative;
-  padding-bottom: 0.75rem;
+  padding-bottom: 1rem;
+  color: rgb(124, 124, 124);
+}
+.more-info div.Delivery {
+  color: black;
 }
 .more-info div::after {
   content: "";
   position: absolute;
   left: 0;
   bottom: 0;
-  width: 100%;
+  width: 65rem;
   height: 1px;
   background-color: #bbbbbb;
 }
@@ -212,7 +195,7 @@ body {
 .order-summary {
   position: absolute;
   top: 5rem;
-  right: 5rem;
+  left: 47rem;
   width: 25rem;
   padding: 1.5rem;
   background-color: #fff;
