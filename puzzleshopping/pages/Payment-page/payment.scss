@@ -116,44 +116,31 @@ body {
       margin-bottom: 0.2rem;
     }
 
-    input[type="text"],
-    input[type="number"],
-    input[type="email"],
-    select {
-      font-size: 1rem;
-      padding: 0.5rem;
-      border: 1px solid #dcdcdc;
-      border-radius: 0.4rem;
-      outline: none;
-      width: 20rem;
-      height: 2.5rem;
-    }
-
     .inline-group {
       display: flex;
       gap: 1rem;
 
       input[type="number"],
       input[type="text"],
-      select {
+      select#country,
+      select#state {
+        width: 10rem;
+        height: 2.5rem;
+        padding: 0.5rem;
+        font-size: 1rem;
+        border: 1px solid #ccc;
+        border-radius: 4px;
         width: 9rem;
-          select {
-            width: 3rem;
-            height: 2rem;
-            padding: 0.5rem;
-            font-size: 1rem;
-            border: 1px solid #ccc;
-            border-radius: 4px;
-            margin-bottom: 0.5rem;
-        
+
+              }
+            }
           }
-        
           #country {
             margin-top: 1rem;
           }
         }
-      }
-    }
+      
+    
     
 
     .remark {

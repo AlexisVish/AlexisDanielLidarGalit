@@ -131,6 +131,25 @@ body {
   border-radius: 4px;
   margin-bottom: 0.5rem;
 }
+.payment-form form .inline-group input[type=number] select .checkbox-group,
+.payment-form form .inline-group input[type=text] select .checkbox-group,
+.payment-form form .inline-group select select .checkbox-group {
+  width: 10rem;
+  height: auto;
+}
+.payment-form form .inline-group input[type=number] select .checkbox-group label,
+.payment-form form .inline-group input[type=text] select .checkbox-group label,
+.payment-form form .inline-group select select .checkbox-group label {
+  font-size: 1rem;
+  color: gray;
+}
+.payment-form form .inline-group input[type=number] select .checkbox-group .cookies label,
+.payment-form form .inline-group input[type=text] select .checkbox-group .cookies label,
+.payment-form form .inline-group select select .checkbox-group .cookies label {
+  display: block;
+  font-size: 0.875rem;
+  color: gray;
+}
 .payment-form form .inline-group input[type=number] #country,
 .payment-form form .inline-group input[type=text] #country,
 .payment-form form .inline-group select #country {
