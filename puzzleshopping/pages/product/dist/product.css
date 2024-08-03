@@ -150,6 +150,7 @@
 }
 .wrapper .page .container__product__details .line:hover {
   text-decoration: underline;
+  cursor: pointer;
 }
 .wrapper .ads {
   position: relative;
