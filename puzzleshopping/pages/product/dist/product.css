@@ -159,3 +159,24 @@
   flex-direction: column;
   gap: 45px;
 }
+.wrapper .ads__title {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: larger;
+}
+.wrapper .ads__articles {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+.wrapper .ads__articles__box {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 25px;
+  margin-bottom: 25px;
+}

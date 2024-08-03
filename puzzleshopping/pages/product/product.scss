@@ -165,5 +165,26 @@
     display: flex;
     flex-direction: column;
     gap: 45px;
+   
+    &__title{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+font-size: larger;    }
+&__articles{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    &__box{
+        position: relative;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        gap: 25px;
+        margin-bottom: 25px;
+    }
+}
   }
 }
