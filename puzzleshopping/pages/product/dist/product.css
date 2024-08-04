@@ -256,6 +256,10 @@
   font-size: larger;
   color: whitesmoke;
 }
+.lower-menu .pages__links__box h8:hover {
+  cursor: pointer;
+  text-decoration: underline;
+}
 .lower-menu .pages p:hover {
   cursor: pointer;
   text-decoration: underline;
