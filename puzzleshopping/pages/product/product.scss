@@ -166,7 +166,8 @@
     display: flex;
     flex-direction: column;
     gap: 45px;
-
+    left: 14%;
+    width: 80%;
     &__title {
       display: flex;
       align-items: center;
@@ -185,8 +186,112 @@
         justify-content: center;
         flex-direction: column;
         gap: 25px;
-        margin-bottom: 25px;
+        margin-bottom: 100px;
       }
     }
   }
+  .scroll {
+    position: relative;
+
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 55px;
+    &__title {
+      font-weight: bold;
+      margin: 5px;
+    }
+    &__box {
+      display: flex;
+      flex-direction: row;
+      gap: 5px;
+      width: 15%;
+
+      &__ad {
+        display: flex;
+        flex-direction: column;
+        padding: 1%;
+
+        direction: ltr;
+        p {
+          margin: 5px;
+        }
+      }
+      &__ad:hover {
+        cursor: pointer;
+      }
+      .transparent {
+        opacity: 0.5;
+      }
+    }
+  }
+}
+.inter {
+  font-family: "Inter", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: weight;
+  font-style: normal;
+}
+.lower-menu {
+  padding-left: 0;
+  width: 100vw;
+  height: fit-content;
+  display: flex;
+  flex-direction: column;
+  background-color: black;
+  .pages {
+    display: flex;
+    flex-direction: row;
+
+    color: gray;
+    padding: 2%;
+    &__links {
+      width: 70%;
+      display: flex;
+      flex-direction: row;
+      gap: 10vw;
+
+      &__box {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        font-size: 16px;
+        p {
+          margin: 0;
+        }
+        h8 {
+            margin-top:15px ;
+          font-size: larger;
+          color: whitesmoke;
+        }
+      }
+    }
+    p:hover{
+cursor: pointer;
+text-decoration: underline;
+    }
+    &__social {
+      width: 30%;
+      position: relative;
+      left: 10vw;
+    }
+  }
+  .location{
+    .image{
+        
+        height: 20px;
+        transform: translateY(2vh) ;
+    }
+    color: white;
+    display: flex;
+    flex-direction: row;
+   gap: 5vw;
+   font-size: 15px;
+   font-weight: 0;
+   text-align: center;
+   justify-content: center;
+  }
+  p:hover{
+    cursor: pointer;
+    text-decoration: underline;
+        }
 }

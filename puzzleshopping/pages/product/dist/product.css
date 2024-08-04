@@ -159,6 +159,8 @@
   display: flex;
   flex-direction: column;
   gap: 45px;
+  left: 14%;
+  width: 80%;
 }
 .wrapper .ads__title {
   display: flex;
@@ -179,5 +181,105 @@
   justify-content: center;
   flex-direction: column;
   gap: 25px;
-  margin-bottom: 25px;
+  margin-bottom: 100px;
+}
+.wrapper .scroll {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 55px;
+}
+.wrapper .scroll__title {
+  font-weight: bold;
+  margin: 5px;
+}
+.wrapper .scroll__box {
+  display: flex;
+  flex-direction: row;
+  gap: 5px;
+  width: 15%;
+}
+.wrapper .scroll__box__ad {
+  display: flex;
+  flex-direction: column;
+  padding: 1%;
+  direction: ltr;
+}
+.wrapper .scroll__box__ad p {
+  margin: 5px;
+}
+.wrapper .scroll__box__ad:hover {
+  cursor: pointer;
+}
+.wrapper .scroll__box .transparent {
+  opacity: 0.5;
+}
+
+.inter {
+  font-family: "Inter", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: weight;
+  font-style: normal;
+}
+
+.lower-menu {
+  padding-left: 0;
+  width: 100vw;
+  height: fit-content;
+  display: flex;
+  flex-direction: column;
+  background-color: black;
+}
+.lower-menu .pages {
+  display: flex;
+  flex-direction: row;
+  color: gray;
+  padding: 2%;
+}
+.lower-menu .pages__links {
+  width: 70%;
+  display: flex;
+  flex-direction: row;
+  gap: 10vw;
+}
+.lower-menu .pages__links__box {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  font-size: 16px;
+}
+.lower-menu .pages__links__box p {
+  margin: 0;
+}
+.lower-menu .pages__links__box h8 {
+  margin-top: 15px;
+  font-size: larger;
+  color: whitesmoke;
+}
+.lower-menu .pages p:hover {
+  cursor: pointer;
+  text-decoration: underline;
+}
+.lower-menu .pages__social {
+  width: 30%;
+  position: relative;
+  left: 10vw;
+}
+.lower-menu .location {
+  color: white;
+  display: flex;
+  flex-direction: row;
+  gap: 5vw;
+  font-size: 15px;
+  font-weight: 0;
+  text-align: center;
+  justify-content: center;
+}
+.lower-menu .location .image {
+  height: 20px;
+  transform: translateY(2vh);
+}
+.lower-menu p:hover {
+  cursor: pointer;
+  text-decoration: underline;
 }
