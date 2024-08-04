@@ -1,0 +1,30 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+body {
+    background-color: #F6F6F6;
+    font-size: 16px;
+}
+
+.hero{
+
+    &__rawpper{
+        max-width: 1300px;
+        margin: 0 auto;
+        display: flex;
+    }
+    
+
+    &__banner{
+        background-color: black;
+    }
+
+    &__video{
+        width: 100%;
+        height: 100vh;
+        background-color: aqua;
+    }
+}
