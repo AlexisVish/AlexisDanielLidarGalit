@@ -1,0 +1,175 @@
+
+/* Basic Scrollbar Styling */
+::-webkit-scrollbar {
+    width: 10px; /* scrollbar width, kinda wide */
+}
+
+/* Scrollbar Track (background part of the scrollbar) */
+::-webkit-scrollbar-track {
+    background: #f1f1f1; /* light background for track */
+    border-radius: 10px; /* rounded corners */
+}
+
+/* Scrollbar Handle (the part you drag) */
+::-webkit-scrollbar-thumb {
+    background: #888; /* medium gray for handle */
+    border-radius: 10px; /* smooth rounded look */
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+    background: #555; /* darker gray on hover */
+}
+
+body {
+    font-family: Arial, sans-serif; /* basic font */
+    margin: 0; /* no margin */
+    padding: 0; /* no padding */
+}
+
+.container {
+    display: flex; /* flex layout */
+    padding: 20px; /* padding around container */
+}
+
+.filter-section {
+    width: 200px; /* width of filter section */
+}
+
+.filter-section nav ul {
+    list-style-type: none; /* no bullets */
+    padding: 0; /* no padding */
+    margin: 0; /* no margin */
+    overflow-y: auto; /* scroll if needed */
+    height: 200px; /* fixed height */
+}
+
+.filter-section nav ul a {
+    display: block; /* make links block-level */
+    text-align: left; /* left align text */
+    padding: 8px; /* padding inside links */
+    text-decoration: none; /* no underline */
+    color: #000; /* black text */
+}
+
+.filter-section nav ul a:hover {
+    background-color: #ddd; /* light gray on hover */
+}
+
+.filter-section details {
+    margin-bottom: 20px; /* space below each filter */
+}
+
+.filter-section details summary {
+    font-size: 18px; /* bigger font size */
+    font-weight: bold; /* bold text */
+    cursor: pointer; /* pointer cursor */
+    list-style: none; /* no bullets */
+    position: relative; /* for positioning arrow */
+    padding-right: 15px; /* space for arrow */
+}
+
+.filter-section details[open] summary::after {
+    content: "▾"; /* down arrow when open */
+    position: absolute; /* positioned relative to summary */
+    right: 0; /* align to the right */
+    top: 0; /* align to the top */
+}
+
+.filter-section summary::after {
+    content: "▸"; /* right arrow when closed */
+    position: absolute; /* positioned relative to summary */
+    right: 0; /* align to the right */
+    top: 0; /* align to the top */
+}
+
+.filter-section .filter-content label {
+    font-size: 14px; /* font size for labels */
+    display: block; /* block-level labels */
+    margin: 8px 0; /* space around labels */
+}
+
+.main-content {
+    flex: 1; /* takes up the rest of the space */
+    margin-left: 20px; /* space on the left */
+}
+
+.header {
+    display: flex; /* flex layout */
+    justify-content: space-between; /* space out items */
+    align-items: center; /* center items vertically */
+    margin-bottom: 20px; /* space below header */
+}
+
+.header .filter-toggle,
+.header .sort-by {
+    cursor: pointer; /* pointer cursor */
+    font-size: 16px; /* font size for buttons */
+}
+
+/* Styling for product listing container */
+.product-listing {
+    display: flex; /* flex layout */
+    flex-wrap: wrap; /* wrap items */
+    gap: 20px; /* space between items */
+}
+
+/* Styling for each product item */
+.product-item {
+    width: calc(33.33% - 20px); /* three items per row */
+    box-sizing: border-box; /* include padding and border in width */
+    padding: 10px; /* padding inside item */
+    border: 1px solid #ddd; /* border color */
+    border-radius: 4px; /* roundy corners */
+    text-align: center; /* center text */
+}
+
+.product-item img {
+    width: 100%; /* full width image */
+    height: auto; /* keep aspect ratio */
+}
+
+.product-info {
+    text-align: left; /* align text left */
+    margin-top: 10px; /* space above info */
+}
+
+.product-name {
+    font-size: 16px; /* font size for name */
+    font-weight: bold; /* bold name */
+}
+
+.product-type {
+    font-size: 14px; /* font size for type */
+    color: #888; /* gray color */
+}
+
+.product-price {
+    font-size: 14px; /* font size for price */
+    color: #888; /* gray color */
+    margin-top: 5px; /* space above price */
+}
+
+.separator {
+    border: none; /* no border */
+    border-top: 1px solid #ddd; /* top border for separation */
+    margin: 10px 0; /* space above and below separator */
+}
+
+footer {
+    background-color: black;
+    color: white;
+    padding: 20px;
+}
+
+.row {
+    margin: 10px 0;
+}
+
+.text-line {
+    text-orientation: mixed;   /* Ensures text is upright */
+    padding: 10px;
+    color: white;
+    display: inline-block;
+    margin: 0 5px; /* Adds some space between the text lines */
+}
