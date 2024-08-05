@@ -1,0 +1,174 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap");
+body {
+  font-family: "Roboto", sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #ffffff;
+  width: 100vw;
+}
+
+.header {
+  background-color: #ffffff;
+  padding: 0;
+  margin: 0;
+}
+.header .top-nav {
+  display: flex;
+  background-color: #ececec;
+  justify-content: space-between;
+  align-items: center;
+}
+.header .top-nav .logo {
+  height: 35px;
+  margin: 0 30px;
+}
+.header .top-nav .nav-links {
+  display: flex;
+  list-style: none;
+  margin: 0 30px;
+}
+.header .top-nav .nav-links a {
+  color: #333;
+  text-decoration: none;
+  font-weight: 500;
+  font-size: 12px;
+  transition: color 0.3s;
+  margin: 0 15px;
+}
+.header .top-nav .nav-links a:hover {
+  color: #7e7979;
+}
+.header .nav-bar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: #010101;
+  gap: 20px;
+  padding: 0 30px;
+  background-color: #ffffff;
+}
+.header .nav-bar .logo {
+  height: 50px;
+}
+.header .nav-bar nav {
+  flex: 1;
+}
+.header .nav-bar nav ul.center-nav {
+  display: flex;
+  justify-content: center;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+.header .nav-bar nav ul.center-nav li {
+  margin: 0 15px;
+}
+.header .nav-bar nav ul.center-nav li a {
+  color: black;
+  text-decoration: none;
+  font-weight: 500;
+}
+.header .nav-bar nav ul.center-nav li a:hover {
+  text-decoration: underline;
+}
+.header .nav-bar .search {
+  display: flex;
+  align-items: center;
+  font-size: 16px;
+  background-color: #f4f0f0;
+  border: 1px solid #f4f0f0;
+  border-radius: 20px;
+  padding: 5px 15px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+.header .nav-bar .search span {
+  margin-right: 10px;
+  color: #958e8e;
+}
+.header .nav-bar .search:hover {
+  background-color: #e0e0e0;
+}
+.header .nav-bar .pict {
+  display: flex;
+  margin-left: 10px;
+  align-items: center;
+}
+.header .nav-bar .pict img {
+  height: 20px;
+  width: 20px;
+}
+.header .nav-bar .pict img:hover {
+  background-color: #a49b9b;
+  border-style: solid 1px #a49b9b;
+  border-radius: 50%;
+}
+.header .separator {
+  height: 60px;
+  margin: 0;
+  display: flex;
+  background-color: #ececec;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+.header .separator p {
+  font-size: 16px;
+  margin: 5px auto;
+}
+.header .separator p a {
+  font-size: 14px;
+  color: black;
+}
+
+.hero {
+  margin: 0;
+}
+.hero #first,
+.hero #second {
+  height: 400px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-size: cover;
+  background-position: center;
+  text-align: center;
+  color: white;
+}
+.hero #first {
+  background-image: url("./foto_1.png");
+  margin-bottom: 30px;
+}
+.hero #first h1 {
+  font-size: 70px;
+  margin: 0;
+}
+.hero #first p {
+  font-size: 14px;
+  margin: 10px 0 0;
+}
+.hero #second {
+  background-image: url("./foto_2.png");
+  margin-bottom: 50px;
+}
+.hero #second h1 {
+  font-size: 70px;
+  margin: 0;
+}
+.hero #second p {
+  font-size: 14px;
+  margin: 10px 0 0;
+}
+
+.benefits {
+  display: flex;
+  flex-direction: row;
+}
+.benefits .benefit {
+  margin: 0 5px;
+}
+.benefits .benefit img {
+  width: 30vw;
+  height: auto;
+}
