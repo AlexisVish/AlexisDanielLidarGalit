@@ -145,17 +145,25 @@
       }
       &__product {
         width: 100%;
-        &__details {
-          display: flex;
-
-          .line {
-            justify-content: space-between;
-          }
-          .line:hover {
-            text-decoration: underline;
-            cursor: pointer;
-          }
+        margin-top: 75px;
+        .toggle-label {
+          display: block;
+     font-weight: bold;
         }
+        .toggle-label:hover{
+            cursor: pointer;
+            text-decoration: underline;
+        }
+
+        .details{
+            display: none; 
+        }
+        .toggle-label:active ~ .details {
+            display: block; 
+            transition-duration: 15s;
+        }
+    
+        
       }
     }
   }
@@ -259,19 +267,19 @@
           margin: 0;
         }
         h8 {
-            margin-top:15px ;
+          margin-top: 15px;
           font-size: larger;
           color: whitesmoke;
         }
-        h8:hover{
-            cursor: pointer;
-            text-decoration: underline;
+        h8:hover {
+          cursor: pointer;
+          text-decoration: underline;
         }
       }
     }
-    p:hover{
-cursor: pointer;
-text-decoration: underline;
+    p:hover {
+      cursor: pointer;
+      text-decoration: underline;
     }
     &__social {
       width: 30%;
@@ -279,23 +287,22 @@ text-decoration: underline;
       left: 10vw;
     }
   }
-  .location{
-    .image{
-        
-        height: 20px;
-        transform: translateY(2vh) ;
+  .location {
+    .image {
+      height: 20px;
+      transform: translateY(2vh);
     }
     color: white;
     display: flex;
     flex-direction: row;
-   gap: 5vw;
-   font-size: 15px;
-   font-weight: 0;
-   text-align: center;
-   justify-content: center;
+    gap: 5vw;
+    font-size: 15px;
+    font-weight: 0;
+    text-align: center;
+    justify-content: center;
   }
-  p:hover{
+  p:hover {
     cursor: pointer;
     text-decoration: underline;
-        }
+  }
 }
