@@ -1,0 +1,308 @@
+.wrapper {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  font-size: 16px;
+  width: 80%;
+  padding-left: 10%;
+  padding-right: 10%;
+  .inter {
+    font-family: "Inter", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: weight;
+    font-style: normal;
+  }
+
+  .page {
+    padding-top: 5%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    .photo-block {
+      width: 70%;
+      padding-right: 5%;
+      display: flex;
+      flex-direction: row;
+      gap: 15px;
+      &__column {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        gap: 15px;
+        .image {
+          width: 100%;
+        }
+      }
+    }
+    .container {
+      display: flex;
+      flex-direction: column;
+      width: 30%;
+      font-size: small;
+      gap: 5px;
+
+      &__title {
+        direction: ltr;
+        width: 60%;
+        line-height: 30px;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+        &__name {
+          line-height: 1px;
+        }
+        &__price {
+          line-height: 1px;
+
+          .transparent {
+            opacity: 0.5;
+          }
+        }
+      }
+      &__sizes {
+        padding-top: 100px;
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        position: relative;
+        gap: 5px;
+        &__header {
+          display: flex;
+          flex-direction: row;
+          justify-content: space-between;
+          .transparent {
+            opacity: 0.5;
+          }
+        }
+        &__size-boxes {
+          p {
+            margin: 5px;
+          }
+          .row {
+            display: flex;
+            flex-direction: row;
+            gap: 5px;
+
+            .size {
+              border-style: solid;
+              border-color: rgb(227, 227, 227);
+              border-radius: 5px;
+              border-width: 1px;
+              font-size: 0.7rem;
+              width: 75px;
+              height: 25px;
+              padding: 3%;
+              display: flex;
+              align-items: center;
+              text-align: center;
+              justify-content: center;
+            }
+            .size:hover {
+              border-color: black;
+              cursor: pointer;
+            }
+          }
+          .row:last-child {
+            margin-bottom: 0;
+          }
+        }
+      }
+      &__choose {
+        display: flex;
+        flex-direction: column;
+        margin-top: 15px;
+        gap: 10px;
+        font-size: 15px;
+        .button {
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          width: 100%;
+          height: 55px;
+          border-style: solid;
+          border-color: black;
+          border-width: 1px;
+          border-radius: 150px;
+        }
+        .button:hover {
+          cursor: pointer;
+        }
+
+        .Add {
+          font-style: bold;
+          background-color: black;
+          color: white;
+        }
+        .Add:hover {
+          background-color: white;
+          color: black;
+        }
+      }
+      .description {
+        margin-top: 45px;
+        width: 100%;
+        font-size: 0.8rem;
+        line-height: 25px;
+      }
+      &__product {
+        width: 100%;
+        margin-top: 75px;
+        .toggle-label {
+          display: block;
+     font-weight: bold;
+        }
+        .toggle-label:hover{
+            cursor: pointer;
+            text-decoration: underline;
+        }
+
+        .details{
+            display: none; 
+        }
+        .toggle-label:active ~ .details {
+            display: block; 
+            transition-duration: 15s;
+        }
+    
+        
+      }
+    }
+  }
+  .ads {
+    position: relative;
+    top: 25px;
+    margin-top: 25px;
+    display: flex;
+    flex-direction: column;
+    gap: 45px;
+    left: 14%;
+    width: 80%;
+    &__title {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: larger;
+    }
+    &__articles {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-direction: column;
+      &__box {
+        position: relative;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        gap: 25px;
+        margin-bottom: 100px;
+      }
+    }
+  }
+  .scroll {
+    position: relative;
+
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 55px;
+    &__title {
+      font-weight: bold;
+      margin: 5px;
+    }
+    &__box {
+      display: flex;
+      flex-direction: row;
+      gap: 5px;
+      width: 15%;
+
+      &__ad {
+        display: flex;
+        flex-direction: column;
+        padding: 1%;
+
+        direction: ltr;
+        p {
+          margin: 5px;
+        }
+      }
+      &__ad:hover {
+        cursor: pointer;
+      }
+      .transparent {
+        opacity: 0.5;
+      }
+    }
+  }
+}
+.inter {
+  font-family: "Inter", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: weight;
+  font-style: normal;
+}
+.lower-menu {
+  padding-left: 0;
+  width: 100vw;
+  height: fit-content;
+  display: flex;
+  flex-direction: column;
+  background-color: black;
+  .pages {
+    display: flex;
+    flex-direction: row;
+
+    color: gray;
+    padding: 2%;
+    &__links {
+      width: 70%;
+      display: flex;
+      flex-direction: row;
+      gap: 10vw;
+
+      &__box {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        font-size: 16px;
+        p {
+          margin: 0;
+        }
+        h8 {
+          margin-top: 15px;
+          font-size: larger;
+          color: whitesmoke;
+        }
+        h8:hover {
+          cursor: pointer;
+          text-decoration: underline;
+        }
+      }
+    }
+    p:hover {
+      cursor: pointer;
+      text-decoration: underline;
+    }
+    &__social {
+      width: 30%;
+      position: relative;
+      left: 10vw;
+    }
+  }
+  .location {
+    .image {
+      height: 20px;
+      transform: translateY(2vh);
+    }
+    color: white;
+    display: flex;
+    flex-direction: row;
+    gap: 5vw;
+    font-size: 15px;
+    font-weight: 0;
+    text-align: center;
+    justify-content: center;
+  }
+  p:hover {
+    cursor: pointer;
+    text-decoration: underline;
+  }
+}
