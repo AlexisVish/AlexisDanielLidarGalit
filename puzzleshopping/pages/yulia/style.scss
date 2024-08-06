@@ -112,12 +112,12 @@ body {
             img {
                 height: 20px;
                 width: 20px;
-
+                
                 &:hover {
                     background-color: #a49b9b;
                     border-style: solid 1px #a49b9b;
                     border-radius: 50%;
-
+                    
                 }
             }
         }
@@ -131,7 +131,7 @@ body {
         align-items: center;
         justify-content: center;
         flex-direction: column;
-
+        
         p {
             font-size: 16px;
             margin: 5px auto;
@@ -161,7 +161,7 @@ body {
     }
 
     #first {
-        background-image: url('./foto_1.png');
+        background-image:url(./foto_1.png);
         margin-bottom: 30px;
 
         h1 {
@@ -176,7 +176,7 @@ body {
     }
 
     #second {
-        background-image: url('./foto_2.png');
+        background-image: url(./foto_2.png);
         margin-bottom: 50px;
 
         h1 {
@@ -191,10 +191,18 @@ body {
     }
 }
 
+h1 {
+    width: 100vw;
+    margin-left: 30px;
+}
+
 .benefits {
 
     display: flex;
     flex-direction: row;
+
+
+    
 
     .benefit {
         margin: 0 5px;

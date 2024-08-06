@@ -137,7 +137,7 @@ body {
   color: white;
 }
 .hero #first {
-  background-image: url("./foto_1.png");
+  background-image: url(../foto_1.png);
   margin-bottom: 30px;
 }
 .hero #first h1 {
@@ -149,7 +149,7 @@ body {
   margin: 10px 0 0;
 }
 .hero #second {
-  background-image: url("./foto_2.png");
+  background-image: url(../foto_2.png);
   margin-bottom: 50px;
 }
 .hero #second h1 {
@@ -159,6 +159,11 @@ body {
 .hero #second p {
   font-size: 14px;
   margin: 10px 0 0;
+}
+
+h1 {
+  width: 100vw;
+  margin-left: 30px;
 }
 
 .benefits {
