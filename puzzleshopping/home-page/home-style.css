@@ -25,6 +25,9 @@ button {
   color: #E5E5E5;
 }
 
+.hero {
+  padding: 0 0 7rem 0;
+}
 .hero__rawpper {
   max-width: full;
   margin: 0 auto;
@@ -69,6 +72,9 @@ button {
   padding: 1rem;
 }
 
+.bestsals {
+  padding: 7rem 0;
+}
 .bestsals__rawpper {
   max-width: full;
   margin: 0 auto;
@@ -85,6 +91,11 @@ button {
   display: flex;
 }
 .bestsals__items {
+  display: flex;
+  justify-content: space-between;
+}
+.bestsals__items .product .info-product {
+  padding-top: 1.5rem;
   display: flex;
   justify-content: space-between;
 }/*# sourceMappingURL=home-style.css.map */

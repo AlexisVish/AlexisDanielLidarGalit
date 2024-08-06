@@ -26,7 +26,7 @@ button{
 }
 
 .hero{
-
+    padding: 0 0 7rem 0;
     &__rawpper{
         max-width: full;
         margin: 0 auto;
@@ -83,6 +83,7 @@ button{
 }
 
 .bestsals{
+    padding: 7rem 0;
 
     &__rawpper{
         max-width: full;
@@ -104,5 +105,14 @@ button{
     &__items{
         display: flex;
         justify-content: space-between;
+
+        & .product{
+
+            & .info-product{
+                padding-top: 1.5rem;
+                display: flex;
+                justify-content: space-between;
+            }
+        }
     }
 }
