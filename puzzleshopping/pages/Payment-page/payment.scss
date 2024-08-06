@@ -93,7 +93,6 @@ body {
 }
 
 ///////////////// FORM //////////////
-
 .payment-form {
   position: relative;
   top: 20rem;
@@ -116,49 +115,74 @@ body {
       margin-bottom: 0.2rem;
     }
 
+    input[type="text"],
+    input[type="number"],
+    input[type="email"],
+    select {
+      font-size: 1rem;
+      padding: 0.5rem;
+      border: 1px solid #dcdcdc;
+      border-radius: 0.4rem;
+      outline: none;
+      width: 20rem;
+      height: 2.5rem;
+    }
+
     .inline-group {
       display: flex;
       gap: 1rem;
 
       input[type="number"],
-      input[type="text"],
-      select#country,
-      select#state {
+      input[type="text"] {
         width: 10rem;
         height: 2.5rem;
         padding: 0.5rem;
         font-size: 1rem;
         border: 1px solid #ccc;
         border-radius: 4px;
-        width: 9rem;
-
-              }
-            }
-          }
-          #country {
-            margin-top: 1rem;
-          }
-        }
+        margin-bottom: 0.5rem;
+     }
       
-    
-    
-
-    .remark {
-      font-size: 0.9rem;
-      color: #666;
-      margin-top: -1.2rem; 
-      margin-bottom: -0.5rem;
-    }
+select {
+  border: 1px solid #ccc;
+  width: 5rem;
+  height: 3rem;
+  color: #ccc;
+}
+     }
   }
+}
+
+  
 
   .checkbox-group {
     display: flex;
     align-items: center;
+    margin-bottom: 1rem;
 
     label {
       font-size: 1rem;
       font-weight: 500;
+      margin-left: 0.5rem;
     }
+
+    .cookies {
+      margin-top: 0.5rem;
+
+      label {
+        display: block;
+        font-size: 0.875rem;
+        color: gray;
+        margin-left: 0.5rem;
+      }
+    }
+  }
+
+  .remark {
+    font-size: 0.9rem;
+    color: #666;
+    margin-top: -1.2rem;
+    margin-bottom: -0.5rem;
   }
 
   .payment-btn {
@@ -171,10 +195,12 @@ body {
     gap: 0;
     opacity: 1;
     margin-bottom: 0.5rem;
+
     &:hover {
       background-color: #c1c1c1;
     }
   }
+}
 
 
 
@@ -182,6 +208,8 @@ body {
   .more-info {
     font-size: 1.3rem;
     margin: 0.5rem;
+    margin-top: 22rem;
+    margin-left: 8rem;
   
     div {
       position: relative;
@@ -288,21 +316,21 @@ body {
   }
 }
 
-@media (max-width: 768px) {
-  .payment-header {
-      flex-direction: column;
-      align-items: flex-start;
-      height: auto;
-  }
+// @media (max-width: 768px) {
+//   .payment-header {
+//       flex-direction: column;
+//       align-items: flex-start;
+//       height: auto;
+//   }
 
-  .payment-header-left-side {
-      flex-direction: row; 
-      align-items: center;
-      gap: 1rem;
-      margin-left: 0;
-  }
+//   .payment-header-left-side {
+//       flex-direction: row; 
+//       align-items: center;
+//       gap: 1rem;
+//       margin-left: 0;
+//   }
 
-  .payment-nike-logo {
-      margin-bottom: 1rem;
-  }
-}
+//   .payment-nike-logo {
+//       margin-bottom: 1rem;
+//   }
+// }
