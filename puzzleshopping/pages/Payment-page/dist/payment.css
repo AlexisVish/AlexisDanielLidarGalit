@@ -279,21 +279,140 @@ body {
   font-weight: 600;
 }
 
-@media (max-width: 768px) {
+/* Mobile Styles */
+@media (max-width: 425px) {
+  body {
+    max-width: 425px;
+    min-width: 100%;
+  }
+
   .payment-header {
+    width: 90%;
+    padding: 1rem;
+    margin: 0 auto;
     flex-direction: column;
-    align-items: flex-start;
     height: auto;
-  }
-
-  .payment-header-left-side {
-    flex-direction: row;
     align-items: center;
-    gap: 1rem;
-    margin-left: 0;
   }
 
-  .payment-nike-logo {
-    margin-bottom: 1rem;
+  .order-summary {
+    position: static;
+    margin-top: 2rem;
+    width: calc(100% - 2rem);
+    padding: 1.5rem;
+    background-color: #fff;
+  }
+
+  .order-details {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 1rem;
+    width: 100%;
+    max-width: 100%;
+  }
+
+  .payment-form {
+    margin-top: 1rem;
+    width: 100%;
+    max-width: 100%;
+  }
+
+  .more-info {
+    font-size: 1.3rem;
+    margin: 1rem;
+    margin-top: 1rem;
+    margin-left: auto;
+    min-width: 100%;
+  }
+}
+
+/* Mobile Styles */
+@media (max-width: 425px) {
+  body {
+    max-width: 425px;
+    min-width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .payment-header {
+    width: 90%;
+    padding: 1rem;
+    margin: 0 auto;
+    height: auto;
+    align-items: center;
+  }
+
+  .order-summary {
+    width: 100%;
+    margin-top: 1rem;
+    padding: 1.5rem;
+    background-color: #fff;
+  }
+
+  .order-details {
+    width: 100%;
+    margin-top: 1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .payment-form {
+    width: 100%;
+    margin-top: 1rem;
+  }
+
+  .more-info {
+    width: 100%;
+    margin-top: 1rem;
+    font-size: 1.3rem;
+  }
+}
+
+/* Tablet Styles */
+@media (max-width: 1024px) {
+  body {
+    max-width: 1024px;
+    min-width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .payment-header {
+    width: 90%;
+    padding: 1rem;
+    margin: 0 auto;
+    height: auto;
+    align-items: center;
+  }
+
+  .order-summary {
+    width: 100%;
+    margin-top: 1rem;
+    padding: 1.5rem;
+    background-color: #fff;
+  }
+
+  .order-details {
+    width: 100%;
+    margin-top: 1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .payment-form {
+    width: 100%;
+    margin-top: 1rem;
+  }
+
+  .more-info {
+    width: 100%;
+    margin-top: 1rem;
+    font-size: 1.3rem;
   }
 }

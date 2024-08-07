@@ -170,7 +170,7 @@ select {
       margin-top: 0.5rem;
 
       label {
-        display: block;
+        // display: block;
         font-size: 0.875rem;
         color: gray;
         margin-left: 0.5rem;
@@ -225,7 +225,7 @@ select {
         position: absolute;
         left: 0;
         bottom: 0;
-        width: 65rem;
+        width: 25rem;
         height: 1px; 
         background-color: #bbbbbb; 
       }
@@ -317,243 +317,125 @@ select {
 }
 
 /////// PHONE ///////
-@media (max-width: 425px)and (max-width: 1024px) {
+@media (max-width: 425px) {
+  body {
+    max-width: 425px;
+    min-width: 100%;
+  }
+
   .payment-header {
+    width: 90%;
     padding: 1rem;
-    margin-left: 12rem;
-    margin-right: 10rem;
+    margin: 0 auto;
     flex-direction: column;
-    display: flex;
+    height: auto;
     align-items: center;
+  }
+
+  .payment-nike-logo {
+    margin-bottom: 1rem;
+  }
+
+  .payment-header-left-side {
+    gap: 0.2rem;
     justify-content: center;
-
-    .payment-nike-logo {
-      margin-bottom: 1rem;
-      align-self: center;
-    }
-
-    .payment-header-left-side {
-      display: flex;
-      flex-direction: row;
-      justify-content: center;
-      align-items: center;
-      gap: 0.5rem;
-    }
   }
 
   .order-summary {
-    position: relative; 
-    top: 0; 
-    left: auto; 
-    margin: 1rem auto; 
-    width: 100%; 
-    max-width: 100%;
+    position: static; // Change to static for flow layout
+    margin-top: 2rem; // Space it 2rem below the header
+    width: calc(100% - 2rem); // Full width minus margins
     padding: 1.5rem;
-    background-color: #fff;
+    background-color: #fff; // Ensure background is white
+  }
 
-    .order-summary-header {
-      font-size: 1.75rem;
-      font-weight: bold;
-      margin-bottom: 1rem;
-    }
-
-    .Subtotal, .delivery-shipping, .order-date {
-      font-size: 1.2rem;
-      margin-bottom: 0.5rem;
-      color: #a6a6a6;
-    }
-
-    .total {
-      color: #363636;
-      font-size: 1.2rem;
-      border-top: 1px solid #ddd;
-      border-bottom: 1px solid #ddd;
-      font-weight: 500;
-    }
-
-    .total-info {
-      color: #1c1c1c;
-      font-size: 0.7rem;
-    }
-
-    .order-date {
-      font-size: 1.4rem;
-      color: #0d0d0d;
-      margin-top: 1rem;
-      font-weight: bolder;
-    }
-
-    .group-item1, .group-item2 {
-      display: flex;
-      align-items: flex-start;
-      margin-bottom: 1rem;
-      padding: 0.5rem;
-      border-bottom: 1px solid #ddd;
-
-      img {
-        width: 100%;
-        max-width: 14rem; 
-        height: auto;
-        margin-right: 1rem;
-      }
-
-      .info-container {
-        display: flex;
-        flex-direction: column;
-        gap: 0.5rem;
-
-        .info-item1, .info-item2 {
-          font-size: 1rem;
-          font-weight: 500;
-        }
-
-        .quantity-info-item1, .quantity-info-item2,
-        .size-item1, .size-item2,
-        .price-item1, .price-item2 {
-          font-size: 0.9rem;
-          color: #666;
-        }
-
-        .price-item1, .price-item2 {
-          font-weight: 600;
-        }
-      }
-    }
+  .order-details {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 1rem;
+    width: 100%;
+    max-width: 100%;
   }
 
   .payment-form {
-    position: relative;
     margin-top: 1rem;
-
-    .header {
-      font-size: 1.4rem;
-      font-weight: bold;
-      margin-bottom: 1.5rem;
-    }
-
-    form {
-      display: flex;
-      flex-direction: column;
-      gap: 1.5rem;
-
-      label {
-        font-size: 1rem;
-        font-weight: 500;
-        margin-bottom: 0.2rem;
-      }
-
-      input[type="text"],
-      input[type="number"],
-      input[type="email"],
-      select {
-        font-size: 1rem;
-        padding: 0.5rem;
-        border: 1px solid #dcdcdc;
-        border-radius: 0.4rem;
-        outline: none;
-        width: 100%;
-        max-width: 100%;
-        height: 2.5rem;
-      }
-
-      .inline-group {
-        display: flex;
-        gap: 1rem;
-        flex-wrap: wrap;
-
-        input[type="number"],
-        input[type="text"] {
-          width: 48%; 
-          height: 2.5rem;
-        }
-
-        select {
-          border: 1px solid #ccc;
-          width: 100%; 
-          height: 3rem;
-          color: #ccc;
-        }
-      }
-    }
-
-    .checkbox-group {
-      display: flex;
-      align-items: center;
-      margin-bottom: 1rem;
-
-      label {
-        font-size: 1rem;
-        font-weight: 500;
-        margin-left: 0.5rem;
-      }
-
-      .cookies {
-        margin-top: 0.5rem;
-
-        label {
-          display: block;
-          font-size: 0.875rem;
-          color: gray;
-          margin-left: 0.5rem;
-        }
-      }
-    }
-
-    .remark {
-      font-size: 0.9rem;
-      color: #666;
-      margin-top: -1.2rem;
-      margin-bottom: -0.5rem;
-    }
-
-    .payment-btn {
-      width: 100%; 
-      max-width: 440px; 
-      height: 60px;
-      border-radius: 30px;
-      background: #f5f5f5;
-      border: none;
-      padding: 16px;
-      gap: 0;
-      opacity: 1;
-      margin-bottom: 0.5rem;
-
-      &:hover {
-        background-color: #c1c1c1;
-      }
-    }
+    width: 100%;
+    max-width: 100%;
   }
 
   .more-info {
     font-size: 1.3rem;
     margin: 1rem;
     margin-top: 1rem;
-    margin-left: auto; 
-    div {
-      position: relative;
-      padding-bottom: 1rem;
-      color: rgb(124, 124, 124);
-
-      &.Delivery {
-        color: black;
-      }
-
-      &::after {
-        content: '';
-        position: absolute;
-        left: 0;
-        bottom: 0;
-        width: 100%; 
-        height: 1px;
-        background-color: #bbbbbb;
-      }
-
-      &:not(:last-child) {
-        margin-bottom: 1rem;
-      }
-    }
+    margin-left: auto;
+    min-width: 100%;
   }
 }
 
 
+///// MOBILE + PHONE /////
+@media (min-width: 425px) and (max-width: 768px) {
+  body {
+    max-width: 1024px;
+    min-width: 100%;
+  }
 
+  .payment-header {
+    width: 90%;
+    padding: 1rem;
+    margin: 0 auto;
+    flex-direction: column;
+    height: auto;
+    align-items: center;
+  }
+
+  .order-summary {
+    position: absolute;
+    left: 1rem;
+   top: 6rem;
+    width: calc(100% - 2rem);
+    padding: 1.5rem;
+  }
+
+  .order-details {
+    display: flex;
+    position: absolute;
+    top: 52rem;
+    left: 2rem;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 1rem;
+    width: 100%;
+    max-width: 100%;
+  }
+
+  .payment-form {
+    position: absolute;
+    top: 70rem;
+    left: 2rem;
+    margin-top: 1rem;
+    width: 50%;
+    max-width: 50%;
+  }
+
+  .more-info {
+    position: absolute;
+    top: 165rem;
+    left: 2rem;
+    font-size: 1.3rem;
+    margin: 1rem;
+    margin-top: 1rem;
+    margin-left: auto;
+max-width: 425px;
+ }
+}
+
+@media (width:1042px) {
+  
+  .more-info {
+    position: absolute;
+    top: 125rem;
+    left: 2rem;
+ }
+}
