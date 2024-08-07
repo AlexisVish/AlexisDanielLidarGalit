@@ -116,59 +116,46 @@ body {
   gap: 1rem;
 }
 .payment-form form .inline-group input[type=number],
-.payment-form form .inline-group input[type=text],
-.payment-form form .inline-group select {
-  width: 9rem;
-}
-.payment-form form .inline-group input[type=number] select,
-.payment-form form .inline-group input[type=text] select,
-.payment-form form .inline-group select select {
-  width: 3rem;
-  height: 2rem;
+.payment-form form .inline-group input[type=text] {
+  width: 10rem;
+  height: 2.5rem;
   padding: 0.5rem;
   font-size: 1rem;
   border: 1px solid #ccc;
   border-radius: 4px;
   margin-bottom: 0.5rem;
 }
-.payment-form form .inline-group input[type=number] select .checkbox-group,
-.payment-form form .inline-group input[type=text] select .checkbox-group,
-.payment-form form .inline-group select select .checkbox-group {
-  width: 10rem;
-  height: auto;
-}
-.payment-form form .inline-group input[type=number] select .checkbox-group label,
-.payment-form form .inline-group input[type=text] select .checkbox-group label,
-.payment-form form .inline-group select select .checkbox-group label {
-  font-size: 1rem;
-  color: gray;
-}
-.payment-form form .inline-group input[type=number] select .checkbox-group .cookies label,
-.payment-form form .inline-group input[type=text] select .checkbox-group .cookies label,
-.payment-form form .inline-group select select .checkbox-group .cookies label {
-  display: block;
-  font-size: 0.875rem;
-  color: gray;
-}
-.payment-form form .inline-group input[type=number] #country,
-.payment-form form .inline-group input[type=text] #country,
-.payment-form form .inline-group select #country {
-  margin-top: 1rem;
-}
-.payment-form .remark {
-  font-size: 0.9rem;
-  color: #666;
-  margin-top: -1.2rem;
-  margin-bottom: -0.5rem;
+.payment-form form .inline-group select {
+  border: 1px solid #ccc;
+  width: 5rem;
+  height: 3rem;
+  color: #ccc;
 }
 
 .checkbox-group {
   display: flex;
   align-items: center;
+  margin-bottom: 1rem;
 }
 .checkbox-group label {
   font-size: 1rem;
   font-weight: 500;
+  margin-left: 0.5rem;
+}
+.checkbox-group .cookies {
+  margin-top: 0.5rem;
+}
+.checkbox-group .cookies label {
+  font-size: 0.875rem;
+  color: gray;
+  margin-left: 0.5rem;
+}
+
+.remark {
+  font-size: 0.9rem;
+  color: #666;
+  margin-top: -1.2rem;
+  margin-bottom: -0.5rem;
 }
 
 .payment-btn {
@@ -189,6 +176,8 @@ body {
 .more-info {
   font-size: 1.3rem;
   margin: 0.5rem;
+  margin-top: 22rem;
+  margin-left: 8rem;
 }
 .more-info div {
   position: relative;
@@ -203,7 +192,7 @@ body {
   position: absolute;
   left: 0;
   bottom: 0;
-  width: 65rem;
+  width: 25rem;
   height: 1px;
   background-color: #bbbbbb;
 }
@@ -279,19 +268,108 @@ body {
   font-weight: 600;
 }
 
-@media (max-width: 768px) {
-  .payment-header {
-    flex-direction: column;
-    align-items: flex-start;
-    height: auto;
+@media (max-width: 425px) {
+  body {
+    max-width: 425px;
+    min-width: 100%;
   }
-  .payment-header-left-side {
-    flex-direction: row;
+  .payment-header {
+    width: 90%;
+    padding: 1rem;
+    margin: 0 auto;
+    flex-direction: column;
+    height: auto;
     align-items: center;
-    gap: 1rem;
-    margin-left: 0;
   }
   .payment-nike-logo {
     margin-bottom: 1rem;
+  }
+  .payment-header-left-side {
+    gap: 0.2rem;
+    justify-content: center;
+  }
+  .order-summary {
+    position: static;
+    margin-top: 2rem;
+    width: calc(100% - 2rem);
+    padding: 1.5rem;
+    background-color: #fff;
+  }
+  .order-details {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 1rem;
+    width: 100%;
+    max-width: 100%;
+  }
+  .payment-form {
+    margin-top: 1rem;
+    width: 100%;
+    max-width: 100%;
+  }
+  .more-info {
+    font-size: 1.3rem;
+    margin: 1rem;
+    margin-top: 1rem;
+    margin-left: auto;
+    min-width: 100%;
+  }
+}
+@media (min-width: 425px) and (max-width: 768px) {
+  body {
+    max-width: 1024px;
+    min-width: 100%;
+  }
+  .payment-header {
+    width: 90%;
+    padding: 1rem;
+    margin: 0 auto;
+    flex-direction: column;
+    height: auto;
+    align-items: center;
+  }
+  .order-summary {
+    position: absolute;
+    left: 1rem;
+    top: 6rem;
+    width: calc(100% - 2rem);
+    padding: 1.5rem;
+  }
+  .order-details {
+    display: flex;
+    position: absolute;
+    top: 52rem;
+    left: 2rem;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 1rem;
+    width: 100%;
+    max-width: 100%;
+  }
+  .payment-form {
+    position: absolute;
+    top: 70rem;
+    left: 2rem;
+    margin-top: 1rem;
+    width: 50%;
+    max-width: 50%;
+  }
+  .more-info {
+    position: absolute;
+    top: 165rem;
+    left: 2rem;
+    font-size: 1.3rem;
+    margin: 1rem;
+    margin-top: 1rem;
+    margin-left: auto;
+    max-width: 425px;
+  }
+}
+@media (width: 1042px) {
+  .more-info {
+    position: absolute;
+    top: 125rem;
+    left: 2rem;
   }
 }/*# sourceMappingURL=payment.css.map */
