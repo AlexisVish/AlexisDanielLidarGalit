@@ -1,0 +1,112 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  justify-content: center;
+  padding: 10px 20px;
+  background-color: #fff;
+  border-bottom: 1px solid #ccc;
+}
+header .logo img {
+  height: 40px;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+header nav {
+  display: flex;
+  flex-direction: row;
+}
+header nav ul {
+  list-style: none;
+  display: flex;
+  flex: 1;
+  justify-content: center;
+  align-items: center;
+  margin: 0;
+  padding: 0;
+}
+header nav ul li {
+  margin: 0 10px;
+}
+header nav ul li a {
+  text-decoration: none;
+  color: #000;
+}
+header nav .search-bar {
+  display: flex;
+  flex: 1;
+  align-items: center;
+}
+header nav .search-bar input {
+  padding: 5px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+header nav .search-bar button {
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
+main {
+  display: flex;
+  flex: 1;
+}
+main .store-locator {
+  padding: 20px;
+  width: 40%;
+  overflow-y: auto;
+}
+main .store-locator h1 {
+  font-size: 24px;
+}
+main .store-locator .search-location {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+}
+main .store-locator .search-location input {
+  flex: 1;
+  padding: 10px;
+  margin-right: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+main .store-locator .search-location button {
+  padding: 10px 20px;
+  background-color: #000;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+main .store-locator .store-list .store-item {
+  margin-bottom: 20px;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+main .store-locator .store-list .store-item .status {
+  color: green;
+}
+main .map {
+  flex: 1;
+  background-color: #eaeaea;
+}
+
+footer {
+  text-align: center;
+  padding: 10px;
+  background-color: #fff;
+  border-top: 1px solid #ccc;
+}
