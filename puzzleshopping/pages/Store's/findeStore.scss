@@ -1,122 +1,357 @@
 body {
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+}
+.navBar {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 10px 20px;
+  background-color: #e0e0e0;
+  border-bottom: #e0e0e0;
+  width: 100%;
+  position: relative;
+
+  .logoImage {
+    flex: 1;
+    padding: 0 50px;
+    margin-left: 0;
+
+    img {
+      width: 50px;
+      height: 30px;
+    }
+  }
+  nav {
     display: flex;
-    flex-direction: column;
-    height: 100vh;
+    ul {
+      list-style: none;
+      display: flex;
+      margin: 0 50px;
+      padding: 0 20px;
+      justify-content: center;
+      align-items: center;
+      gap: 10px;
+
+      li {
+        position: relative;
+        margin: 0 10px;
+        padding-right: 10px;
+        border-right: 1px solid #000;
+
+        a {
+          text-decoration: none;
+          color: #000;
+          font-weight: bold;
+          padding: 5px;
+          cursor: pointer;
+        }
+        &:last-child {
+          border-right: none;
+        }
+        a:hover {
+          border-bottom: 2px solid #000;
+        }
+      }
+    }
+  }
 }
 
 header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 20px;
+  background-color: #fff;
+  border-bottom: 1px solid #ccc;
+  width: 100%;
+
+  .logo.nav.search-bar {
+    flex: 1;
+  }
+  .logo img {
+    width: 40px;
+    padding: 0 20px;
+  }
+
+  nav {
     display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 10px 20px;
-    background-color: #fff;
-    border-bottom: 1px solid #ccc;
+    padding-left: 15%;
+    ul {
+      list-style: none;
+      display: flex;
+      margin: 0 50px;
+      padding: 0 20px;
+      justify-content: center;
+      align-items: center;
+      gap: 10px;
 
-    .logo img {
-        width: 40px;     
-    }
+      li {
+        position: relative;
 
-    nav {
-   
-        ul {
-          
-            list-style: none;
-            display: flex;
-            margin: 0;
-            padding: 0;
+        margin: 0 10px;
 
-            li {
-                margin: 0 10px;
-
-                a {
-                    text-decoration: none;
-                    color: #000;
-                }
-            }
+        a {
+          text-decoration: none;
+          color: #000;
+          font-weight: bold;
+          padding: 5px;
+          cursor: pointer;
         }
 
-        .search-bar {
-            display: flex;
-        
-            align-items: center;
-
-            input {
-                padding: 5px;
-                border: 1px solid #ccc;
-                border-radius: 4px;
-            }
-
-            button {
-                background: none;
-                border: none;
-                cursor: pointer;
-            }
+        a:hover {
+          border-bottom: 2px solid #000;
         }
+      }
     }
+  }
+
+  .search-bar {
+    display: flex;
+    width: 200px;
+    position: relative;
+    margin-right: 25px;
+
+    input {
+      width: 100%;
+      height: 20px;
+      padding: 5px;
+      border: 1px solid #ccc;
+      border-radius: 15px;
+      padding-right: 40px;
+    }
+    input:hover {
+      background-color: #e0e0e0;
+    }
+
+    .Buttons {
+      position: absolute;
+      top: 50%;
+      right: 10px;
+      transform: translateY(-50%);
+      width: 30px;
+      height: 30px;
+      filter: grayscale(100%);
+      border: none;
+      background: none;
+      cursor: pointer;
+      img {
+        width: 20px;
+        height: 20px;
+      }
+    }
+    .Buttons:hover {
+      background-color: #e0e0e0;
+      border-radius: 50%;
+    }
+    .search-bar:hover {
+      background-color: #e0e0e0;
+    }
+  }
 }
 
 main {
-    display: flex;
-    flex: 1;
+  display: flex;
+  flex: 1;
 
-    .store-locator {
-        padding: 20px;
-        width: 40%;
-        overflow-y: auto;
+  .store-locator {
+    padding: 20px;
+    width: 40%;
+    overflow-y: auto;
 
-        h1 {
-            font-size: 24px;
-        }
-
-        .search-location {
-            display: flex;
-            align-items: center;
-            margin-bottom: 20px;
-
-            input {
-                flex: 1;
-                padding: 10px;
-                margin-right: 10px;
-                border: 1px solid #ccc;
-                border-radius: 4px;
-            }
-
-            button {
-                padding: 10px 20px;
-                background-color: #000;
-                color: #fff;
-                border: none;
-                border-radius: 4px;
-                cursor: pointer;
-            }
-        }
-
-        .store-list {
-            .store-item {
-                margin-bottom: 20px;
-                padding: 10px;
-                border: 1px solid #ccc;
-                border-radius: 4px;
-
-                .status {
-                    color: green;
-                }
-            }
-        }
+    h1 {
+      font-size: 24px;
     }
 
-    .map {
+    .search-location {
+      display: flex;
+      align-items: center;
+      margin-bottom: 20px;
+      position: relative;
+
+      input {
         flex: 1;
-        background-color: #eaeaea;
-    }
-}
+        padding: 10px;
+        height: 20px;
+        margin-right: 20px;
+        border: 1px solid #ccc;
+        border-radius: 10px;
+      }
 
+      .Buttons {
+        position: absolute;
+        top: 50%;
+        right: 30px;
+        transform: translateY(-50%);
+        width: 30px;
+        height: 30px;
+        filter: grayscale(100%);
+        border: none;
+        background: none;
+        cursor: pointer;
+        img {
+          width: 20px;
+          height: 20px;
+        }
+      }
+      .Buttons:hover {
+        background-color: #e0e0e0;
+        border-radius: 50%;
+      }
+    }
+
+    .numberOfStoresNearMyLocatoin {
+      display: flex;
+      .text {
+        flex: 1;
+        color: gray;
+        font-size: medium;
+        margin-top: 10px;
+        margin-left: 20px;
+        margin-bottom: 10px;
+      }
+      .filterButton {
+        flex: 1;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-radius: 20px;
+        font-size: medium;
+        color: gray;
+        font-weight: bold;
+        border: #000;
+        cursor: pointer;
+        margin-left: 20px;
+        background-color: #e0e0e0;
+        margin-bottom: 10px;
+        &:hover {
+          background-color: darkslategrey;
+        }
+      }
+    }
+
+    .store-list {
+      max-height: 700px;
+      overflow-y: auto;
+      padding: 10px;
+      border: 1px solid #ccc;
+
+      .store-item {
+        margin-bottom: 20px;
+        border-bottom: 1px solid gray;
+
+        .status {
+          color: green;
+        }
+      }
+    }
+    h3 {
+      margin-top: 20px;
+      color: #000;
+      border-bottom: 2px solid #000;
+      cursor: pointer;
+      &:hover {
+        color: #ccc;
+      }
+    }
+  }
+
+  .map {
+    width: 100%;
+    height: 1000px;
+    max-width: 1000px;
+    margin: 0 auto;
+    border: 2px solid #ccc;
+    overflow: hidden;
+    position: relative;
+
+    iframe {
+      width: 100%;
+      height: 100%;
+      border: 0;
+      position: absolute;
+      top: 0;
+      left: 0;
+    }
+  }
+}
 footer {
-    text-align: center;
-    padding: 10px;
-    background-color: #fff;
-    border-top: 1px solid #ccc;
+  display: flex;
+  background-color: #f9f9f9;
+  padding: 20px 0;
+  border-top: 1px solid #ddd;
+
+    .footer-sections {
+      display: flex;
+      justify-content: space-between;
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 0 20px;
+
+      .footer-section {
+        width: 22%;
+
+        h3 {
+          font-size: 16px;
+          font-weight: bold;
+          margin-bottom: 10px;
+        }
+
+        ul {
+          list-style: none;
+          padding: 0;
+
+          li {
+            margin-bottom: 8px;
+            
+            a {
+              text-decoration: none;
+              color: #333;
+              font-size: 14px;
+
+              &:hover {
+                text-decoration: underline;
+              }
+            }
+          }
+        }
+      }
+    }
+
+    .footer-bottom {
+      max-width: 1200px;
+      margin: 20px auto 0;
+      padding: 0 20px;
+      font-size: 12px;
+      color: #777;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      border-top: 1px solid #ddd;
+      padding-top: 10px;
+
+      ul {
+        
+        display: flex;
+        list-style: none;
+        padding: 0;
+
+        li {
+          margin-right: 20px;
+
+          a {
+            text-decoration: none;
+            color: #777;
+
+            &:hover {
+              text-decoration: underline;
+            }
+          }
+        }
+      }
+    }
 }
