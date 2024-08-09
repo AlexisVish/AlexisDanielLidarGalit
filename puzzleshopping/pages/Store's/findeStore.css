@@ -11,27 +11,16 @@ header {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  justify-content: center;
   padding: 10px 20px;
   background-color: #fff;
   border-bottom: 1px solid #ccc;
 }
 header .logo img {
   height: 40px;
-  position: absolute;
-  top: 0;
-  left: 0;
-}
-header nav {
-  display: flex;
-  flex-direction: row;
 }
 header nav ul {
   list-style: none;
   display: flex;
-  flex: 1;
-  justify-content: center;
-  align-items: center;
   margin: 0;
   padding: 0;
 }
@@ -44,7 +33,6 @@ header nav ul li a {
 }
 header nav .search-bar {
   display: flex;
-  flex: 1;
   align-items: center;
 }
 header nav .search-bar input {
@@ -109,4 +97,4 @@ footer {
   padding: 10px;
   background-color: #fff;
   border-top: 1px solid #ccc;
-}
+}/*# sourceMappingURL=findeStore.css.map */
